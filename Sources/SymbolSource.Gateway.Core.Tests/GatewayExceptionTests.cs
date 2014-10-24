@@ -19,7 +19,7 @@ namespace SymbolSource.Gateway.Core.Tests
         }
         
         [Fact]
-        public void TestShortException()
+        public void TestShortException()     
         {
             var outer = new GatewayException("Outer", new Exception("Inner"));
             AssertStatusDescription(outer.ResponseStatusDescription);
